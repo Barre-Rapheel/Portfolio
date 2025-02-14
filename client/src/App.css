@@ -3,3 +3,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* Couleurs */
+  --color-background: #1e1e2e; /* Bleu nuit profond */
+  --color-accent: #4a90e2; /* Bleu vibrant */
+  --color-text-primary: #f8f9fa; /* Blanc cassé */
+  --color-text-secondary: #a1a1aa; /* Gris clair */
+  --color-interactive: #ff6b6b; /* Rouge corail */
+
+  /* Typographies */
+  --font-title: "Montserrat", sans-serif;
+  --font-subtitle: "Poppins", sans-serif;
+  --font-elegant-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-alternative-body: "Lato", sans-serif;
+  --font-minimalist-body: "Source Sans Pro", sans-serif;
+  --font-interactive: "Raleway", sans-serif;
+  --font-technical: "Roboto Mono", monospace;
+
+  /* Tailles de police */
+  --font-size-large: 2.5rem; /* Pour les titres principaux */
+  --font-size-medium: 1.5rem; /* Pour les sous-titres */
+  --font-size-small: 1rem; /* Pour le texte principal */
+  --font-size-xsmall: 0.875rem; /* Pour les textes secondaires */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+}
+
+p {
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--color-interactive);
+  color: var(--color-text-primary);
+  font-family: var(--font-interactive);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+}
